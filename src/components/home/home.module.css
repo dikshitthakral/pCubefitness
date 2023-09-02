@@ -1,5 +1,5 @@
 .first_section {
-  height: calc(100vh - 90px);
+  
   /* background-image: url(../../assets/home1.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,14 +57,7 @@
   border-color: var(--three);
 }
 
-@media (max-width: 900px) {
-  .first_section {
-    height: calc(100vh - 70px);
-  }
-  .first_section h1 {
-    font-size: 40px;
-  }
-}
+
 
 /* Third  Section*/
 
@@ -188,22 +181,7 @@
   background-color: var(--three);
 }
 
-@media (max-width: 1000px) {
-  .fourth {
-    flex-direction: column;
-  }
-  .fourth .text {
-    width: 100%;
-  }
-  .fourth_image_container {
-    text-align: center;
-  }
 
-  .fourth .text .text_one p,
-  .fourth .text .text_two p {
-    width: 100%;
-  }
-}
 
 /* Section Five  */
 
@@ -361,18 +339,7 @@
   color: var(--one);
 }
 
-@media (max-width: 900px) {
-  .eight_content {
-    flex-direction: column;
-  }
-  .eight_content > div {
-    width: 100%;
-  }
 
-  .eight_first p:last-of-type {
-    width: 100%;
-  }
-}
 
 /* Section nine */
 
@@ -451,11 +418,7 @@
   color: #ffe182;
 }
 
-@media (max-width: 360px) {
-  .plans {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
-}
+
 
 /* section ten */
 
@@ -523,9 +486,56 @@
   height: 100%;
   background-color: #00000099;
 }
-
+.main-image{
+  max-width: -webkit-fill-available !important;
+}
 @media (max-width: 550px) {
   .ten div {
     width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .main-image img{
+    max-width: -webkit-fill-available !important;
+  }
+  .eight_content {
+    flex-direction: column;
+  }
+
+  .eight_content>div {
+    width: 100%;
+  }
+
+  .eight_first p:last-of-type {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .plans {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+@media (max-width: 1000px) {
+  .fourth {
+    flex-direction: column;
+  }
+
+  .fourth .text {
+    width: 100%;
+  }
+
+  .fourth_image_container {
+    text-align: center;
+  }
+
+  .fourth .text .text_one p,
+  .fourth .text .text_two p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .first_section h1 {
+    font-size: 40px;
   }
 }
